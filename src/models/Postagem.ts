@@ -1,5 +1,5 @@
-import type Tema from "../Models_tmp/Tema";
-import type Usuario from "../Models_tmp/Usuario";
+import type Tema from "./Tema";
+import type Usuario from "./Usuario";
 
 export default interface Postagem {
     id: number;
