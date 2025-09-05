@@ -1,8 +1,8 @@
 import { useEffect, useState, type ChangeEvent, type FormEvent } from "react"
 import { useNavigate } from "react-router-dom"
 import { ClipLoader } from "react-spinners"
-import type Usuario from "../../Models_tmp/Usuario"
 import { cadastrarUsuario } from "../../services/Service"
+import type Usuario from "../../models/Usuario"
 
 function Cadastro() {
 
@@ -27,7 +27,7 @@ function Cadastro() {
     }, [usuario])
 
     function retornar() {
-        navigate('/login')
+        navigate('/')
     }
 
     function atualizarEstado(e: ChangeEvent<HTMLInputElement>) {
